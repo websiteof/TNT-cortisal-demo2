@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TNT Cortisol – Cortisol Test Strip Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Cortisol Test Strip Analyzer (TNT Cortisol)</h1>
+  <p class="subtitle">AI Colorimetric Calibration – Educational Prototype</p>
+
+  <section class="card">
+    <h2>How it works</h2>
+    <div class="flow">
+      <div>📤 Upload test strip image</div>
+      <div class="arrow">↓</div>
+      <div>🔍 Detect control & test line</div>
+      <div class="arrow">↓</div>
+      <div>📊 Calculate T/C ratio</div>
+      <div class="arrow">↓</div>
+      <div>🧠 Interpret cortisol level</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Upload Test Strip</h2>
+    <input type="file" />
+    <button>Analyze Strip</button>
+  </section>
+
+  <section class="card">
+    <h2>Classification Chart</h2>
+    <table>
+      <tr><th>T/C Ratio</th><th>Level</th></tr>
+      <tr><td>&lt; 0.2</td><td>Very Low</td></tr>
+      <tr><td>0.2 – 0.4</td><td>Low</td></tr>
+      <tr><td>0.4 – 0.6</td><td>Normal</td></tr>
+      <tr><td>0.6 – 0.8</td><td>High</td></tr>
+      <tr><td>&gt; 0.8</td><td>Very High</td></tr>
+    </table>
+  </section>
+
+  <p class="footer">Educational prototype only – not for medical diagnosis</p>
+
+</body>
+</html>
